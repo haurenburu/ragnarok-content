@@ -1,0 +1,2 @@
+// add on rAthena\map_index.txt
+mag_dun03

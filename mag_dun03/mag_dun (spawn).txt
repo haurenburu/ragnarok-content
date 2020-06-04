@@ -1,0 +1,9 @@
+// add on rAthena\npc\re\mobs\dungeons\mag_dun.txt
+mag_dun03,0,0	monster	Rigid Blazer	20372,30,5000
+mag_dun03,0,0	monster	Rigid Nightmare Terror	20373,20,5000
+mag_dun03,0,0	monster	Rigid Sky Deleter	20374,30,5000
+mag_dun03,0,0	monster	Rigid Deleter	20375,20,5000
+mag_dun03,0,0	monster	Rigid Explosion	20376,20,5000
+mag_dun03,0,0	monster	Rigid Kaho	20377,20,5000
+mag_dun03,0,0	monster	Rigid Lava Golem	20378,10,5000
+mag_dun03,0,0,0,0	boss_monster	Rigid Muspellskoll	20419,1,7200000,600000,1

@@ -1,0 +1,3 @@
+// add on rAthena\npc\warps\dungeons\mag_dun.txt
+
+mag_dun02,245,68,0	warp	mag02-03	1,1,mag_dun03,47,30
