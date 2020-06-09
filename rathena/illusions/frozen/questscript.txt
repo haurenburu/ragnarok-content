@@ -1,0 +1,135 @@
+-	script	Seal	-1,{
+	if(checkquest(15116) == 1){
+		$mvp++;
+		disablenpc strnpcinfo(3);
+	}
+	
+	if($mvp >= 4){
+		mapannounce "ice_d03_i","Kitu nasceu",bc_map;
+		monster "ice_d03_i",129,175,"Angry ktulanux",3796,1,"mvpRespawn::OnKtuDead";
+		$mvp = 0;
+		end;
+	}
+}
+
+-	script	mvpRespawn	-1,{
+	OnKtuDead:
+		mapannounce "ice_d03_i","Kitu morreu pode badernar",bc_map;
+		sleep2(3600000); // 1h cd TODO: must be a better way to do it...
+		enablenpc "Seal#1";
+		enablenpc "Seal#2";
+		enablenpc "Seal#3";
+		enablenpc "Seal#4";
+		
+}
+
+ice_d03_i,126,172,4	duplicate(Seal)	Seal#1	111
+ice_d03_i,126,126,4	duplicate(Seal)	Seal#2	111
+ice_d03_i,172,172,4	duplicate(Seal)	Seal#3	111
+ice_d03_i,172,126,4	duplicate(Seal)	Seal#4	111
+
+
+
+ice_d03_i,156,40,4	script	jays	4_m_frozen_gc,{
+	
+	if($frozen == 0 && checkquest(15110) == -1){
+		setquest 15110;
+		$frozen++;
+		end;
+	}
+	
+	if($frozen == 1 && checkquest(15110) == 1 && countitem(25309) >= 10){
+		erasequest 15110;
+		$frozen++;
+		delitem 25309,10;
+		getexp 100000,100000;
+		end;
+	}
+
+	if($frozen == 2 && checkquest(15111) == -1){
+		setquest 15111;
+		$frozen++;
+		end;
+	}
+	
+	if($frozen == 3 && checkquest(15111,HUNTING) == 2){
+		erasequest 15111;
+		getexp 100000,100000;
+		$frozen++;
+		end;
+	}
+	
+	if($frozen == 4 && checkquest(15112) == -1) {
+		classchange 111,"jays",bc_self;
+		monster "ice_d03_i",156,40,"Jays",3798,1,"breakIce::onGCdied";
+		setquest 15112;
+		end;
+	}
+	
+	if($frozen == 5 && checkquest(15113) == -1) {
+		classchange 111,"brides",bc_self;
+		monster "ice_d03_i",149,40,"Brides",3797,1,"breakIce::onKNdied";
+		setquest 15113;
+		end;
+	}
+	
+	
+	if($frozen == 6) {
+		setquest 15116;
+		$frozen = 10;
+		end;
+	}
+}
+ice_d03_i,149,40,6	script	brides	4_m_frozen_kn,{
+	// this is a placeholder just ignore i'm using to test the timeline of the quest xD
+	
+	$frozen = 0;
+	$mvp = 0;
+	erasequest 15110;
+	erasequest 15111;
+	erasequest 15112;
+	erasequest 15113;
+	erasequest 15116;
+	npctalk $frozen;
+}
+
+
+-	script	breakIce	-,{
+	onGCdied:
+		classchange 4_M_BLACKMAN,"jays",bc_self;
+		$frozen++;
+		erasequest 15112;
+		end;
+	onKNdied:
+		classchange 4_M_KNIGHT_BLACK,"brides",bc_self;
+		$frozen++;
+		erasequest 15113;
+		end;
+}
+
+
+-	script	Soil	-1,{
+	if((checkquest(15110) == 1) && (countitem(25309) < 10)){
+		progressbar "005500", 2;
+		if(rand(1,2) == 2){
+			getitem 25309,1;
+		}
+	}
+}
+
+
+
+ice_d03_i,153,34,4	duplicate(Soil)	Soil#1	2372
+
+
+// monster respawn
+ice_d03_i,0,0	monster	Angry Gazeti	3792,20,5000
+ice_d03_i,0,0	monster	Angry Snowier	3793,30,5000
+ice_d03_i,0,0	monster	Angry Ice Titan	3794,20,5000
+ice_d03_i,0,0	monster	Solid Icicle	3795,20,5000
+
+
+
+// npc quest
+
+
