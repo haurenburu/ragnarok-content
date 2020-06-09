@@ -1,0 +1,28 @@
+// add on rAthena\db\import\item_db.txt
+
+23986,Odin_Relic,Odin Relic,2,20,,50,,,,,0xFFFFFFFF,63,2,,,,,,{ getrandgroupitem(IG_Odin_Relic,1,1,1); },{},{}
+25767,Angel_Dream,Angel's Dream,3,0,,0,,,,,,,,,,,,,{},{},{}
+25768,Ingrid_Armor_Piece,Ingrid Armor Piece,3,0,,0,,,,,,,,,,,,,{},{},{}
+25769,Reginleif_Armor_Piece,Reginleif Armor Piece,3,0,,0,,,,,,,,,,,,,{},{},{}
+20947,Clergy_Manteau,Clergy's Manteau,5,20,10,450,0,40,0,0,0xFFFFFFFF,63,2,4,0,170,1,0,{.@r = getrefine();bonus bMaxSPrate,5;bonus bMdef,10;bonus bVariableCastrate,-10;bonus2 bMagicAddRace,RC_Angel,.@r/2*1;bonus2 bMagicAddRace,RC_Demon,.@r/2*1;bonus2 bSubRace,RC_Angel,.@r/3*1;bonus2 bSubRace,RC_Demon,.@r/3*1;if(.@r >=7) bonus bVariableCastrate,-10;},{},{}
+22209,Clergy_Boots,Clergy's Boots,5,0,,400,0,35,0,0,0xFFFFFFFF,63,2,64,0,170,1,0,{.@r = getrefine();bonus bMaxHPrate, 5;bonus bMdef, 10;bonus bAspdRate, 10;bonus2 bMagicAddRace,RC_Angel,.@r/2*1;bonus2 bMagicAddRace,RC_Demon,.@r/2*1;bonus2 bSubRace,RC_Angel,.@r/3*1;bonus2 bSubRace,RC_Demon,.@r/3*1;if(.@r >= 7) bonus bAspdRate, 10;},{},{}
+15397,STR_Soutane,STR Soutane,5,20,10,800,0,100,0,1,0xFFFFFFFF,63,2,16,0,170,1,0,{.@r = getrefine();bonus bMaxHPrate,10;bonus bMaxSPrate,10;bonus bAspdRate,10;bonus bStr, .@r/3*5;bonus2 bAddSize,Size_All,.@r/2*3;bonus2 bAddRace,RC_Angel, .@r / 4 * 8;bonus2 bAddRace,RC_Demon, .@r / 4 * 8;},{},{}
+15398,AGI_Soutane,AGI Soutane,5,20,10,800,0,100,0,1,0xFFFFFFFF,63,2,16,0,170,1,0,{.@r = getrefine();bonus bMaxHPrate,10;bonus bMaxSPrate,10;bonus bAspdRate,10;bonus bAgi, .@r/3*5;bonus bLongAtkRate,.@r/2*3;bonus2 bAddRace,RC_Angel, .@r / 4 * 8;bonus2 bAddRace,RC_Demon, .@r / 4 * 8;},{},{}
+15399,VIT_Soutane,VIT Soutane,5,20,10,800,0,100,0,1,0xFFFFFFFF,63,2,16,0,170,1,0,{.@r = getrefine();bonus bMaxHPrate,15;bonus bMaxSPrate,5;bonus bAspdRate,7;bonus bVariableCastrate,-7;bonus bVit, .@r/3*5;bonus bMaxHPrate,.@r/2*2;bonus2 bAddRace,RC_Angel, .@r / 4 * 10;bonus2 bAddRace,RC_Demon, .@r / 4 * 10;bonus2 bMagicAddRace,RC_Angel, .@r / 4 * 10;bonus2 bMagicAddRace,RC_Demon, .@r / 4 * 10;},{},{}
+15400,DEX_Soutane,DEX Soutane,5,20,10,800,0,100,0,1,0xFFFFFFFF,63,2,16,0,170,1,0,{.@r = getrefine();bonus bMaxHPrate,10;bonus bMaxSPrate,10;bonus bAspdRate,10;bonus bVariableCastrate,-10;bonus bDex, .@r/3*5;bonus2 bAddSize,Size_All,.@r/2*1;bonus bMatkRate,.@r/2*1;bonus2 bAddRace,RC_Angel, .@r / 4 * 8;bonus2 bAddRace,RC_Demon, .@r / 4 * 8;bonus2 bMagicAddRace,RC_Angel, .@r / 4 * 8;bonus2 bMagicAddRace,RC_Demon, .@r / 4 * 8;},{},{}
+15401,INT_Soutane,INT Soutane,5,20,10,800,0,100,0,1,0xFFFFFFFF,63,2,16,0,170,1,0,{.@r = getrefine();bonus bMaxHPrate,5;bonus bMaxSPrate,15;bonus bAspdRate,10;bonus bVariableCastrate,-10;bonus bInt, .@r/3*5;bonus bMatkRate,.@r/2*3;bonus2 bMagicAddRace,RC_Angel, .@r / 4 * 6;bonus2 bMagicAddRace,RC_Demon, .@r / 4 * 6;},{},{}
+15402,LUK_Soutane,LUK Soutane,5,20,10,800,0,100,0,1,0xFFFFFFFF,63,2,16,0,170,1,0,{.@r = getrefine();bonus bMaxHPrate,10;bonus bMaxSPrate,10;bonus bAspdRate,10;bonus bCritical,@r/2*3;bonus bCritAtkRate,.@r/2*3;bonus bLuk, .@r/3*5;bonus2 bAddRace,RC_Angel, .@r / 4 * 8;bonus2 bAddRace,RC_Demon, .@r / 4 * 8;},{},{}
+// rathena doesnt suport those yet
+//310076,STR_Blessing,STR Blessing,6,0,,0,,,,,,63,2,,,,,,{bonus bStr,10; bonus2 bAddSize,Size_All,10; bonus bDef,25;bonus bMdef,3;},{},{}
+//310077,AGI_Blessing,AGI Blessing,6,0,,0,,,,,,63,2,,,,,,{bonus bAgi,10; bonus bLongAtkRate,10; bonus bDef,25;bonus bMdef,3;},{},{}
+//310078,VIT_Blessing,VIT Blessing,6,0,,0,,,,,,63,2,,,,,,{bonus bVit,10;bonus bMaxHPrate,10;bonus bMaxSPrate,10;bonus bDef,25;bonus bMdef,3;},{},{}
+//310079,DEX_Blessing,DEX Blessing,6,0,,0,,,,,,63,2,,,,,,{bonus bDex,10;bonus bAspdRate,10;bonus bVariableCastrate,-10;bonus bDef,25;bonus bMdef,3;},{},{}
+//310080,INT_Blessing,INT Blessing,6,0,,0,,,,,,63,2,,,,,,{bonus bInt, 10;bonus bMatkRate,10;bonus bDef,20;bonus bMdef,3;},{},{}
+//310081,LUK_Blessing,LUK Blessing,6,0,,0,,,,,,63,2,,,,,,{bonus bLuk, 10;bonus bCritAtkRate,15; bonus bDef, 25;bonus bMdef, 3;},{},{}
+//300008,Angelgolt_Card,Angelgolt Card,6,,,0,,,,,0xFFFFFFFF,63,2,,,,,,{},{},{}
+//300009,Spectrum_Plasma_Card,Spectrum Plasma Card,6,,,0,,,,,0xFFFFFFFF,63,2,,,,,,{},{},{}
+//300010,Arch_Plasma_Card,Arch Plasma Card,6,,,0,,,,,0xFFFFFFFF,63,2,,,,,,{},{},{}
+//300011,Holy_Frus_Card,Holy Frus Card,6,,,0,,,,,0xFFFFFFFF,63,2,,,,,,{},{},{}
+//300012,Holy_Skogul_Card,Holy Skogul Card,6,,,0,,,,,0xFFFFFFFF,63,2,,,,,,{},{},{}
+//300013,Reginleif_Card,Reginleif Card,6,,,0,,,,,0xFFFFFFFF,63,2,,,,,,{},{},{}
+//300014,Ingrid_Card,Ingrid Card,6,,,0,,,,,0xFFFFFFFF,63,2,,,,,,{},{},{}

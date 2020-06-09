@@ -1,0 +1,7 @@
+// add on rAthena\db\import\mob_skill_db.txt
+
+20604,Angelgolt@AL_TELEPORT,walk,26,1,5000,0,5000,no,self,rudeattacked,0,,,,,,,
+20604,Angelgolt@AL_TELEPORT,idle,26,1,10000,0,0,no,self,rudeattacked,0,,,,,,,
+20604,Angelgolt@CR_GRANDCROSS,attack,254,2,1000,0,5000,yes,target,always,0,,,,,,,
+20608,Arch Plasma@NPC_WIDESIGHT,idle,669,0,0,0,0,no,self,always,0,,,,,,,
+20607,Holy Skogul@CR_GRANDCROSS,attack,254,-1,2000,1000,10000,yes,self,always,0,,,,,,,

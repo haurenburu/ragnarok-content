@@ -1,0 +1,17 @@
+// add on rAthena\db\import\item_combo_db.txt
+
+//15397:310076,{ bonus2 bAddClass,Class_All,5; bonus2 bAddRace, RC_All, 12; }
+//15398:310077,{ bonus bAspd, 1; bonus bPerfectHitRate, 5; }
+//15399:310078,{ bonus bMaxHPrate, 5; bonus bDelayrate, 5; }
+//15400:310079,{ bonus bFixedCast, 300; }
+//15401:310080,{ bonus bCastrate, -10; bonus bMagicAtkEle, Ele_ALL, 12; }
+//15402:310081,{ bonus bCritical, 10; bonus2 bAddSize, Size_All, 12; }
+15402:20947:22209,{ .@r = getequiprefinerycnt(EQI_ARMOR) + getequiprefinerycnt(EQI_GARMENT) + getequiprefinerycnt(EQI_SHOES); bonus bLuk,8; bonus bDef,30; bonus bMdef,15; bonus2 bSubRace, RC_Angel, 15; bonus2 bSubRace, RC_Demon, 15; if(.@r >= 27){ bonus2 bAddClass,Class_All,10; bonus bDelayrate, 20; bonus bFixedCastrate, 20; } }
+15397:20947:22209,{ .@r = getequiprefinerycnt(EQI_ARMOR) + getequiprefinerycnt(EQI_GARMENT) + getequiprefinerycnt(EQI_SHOES); bonus bStr,8; bonus bDef,30; bonus bMdef,15; bonus2 bSubRace, RC_Angel, 15; bonus2 bSubRace, RC_Demon, 15; if(.@r >= 27){ bonus2 bAddClass,Class_All,10; bonus bDelayrate, 20; bonus bFixedCastrate, 20; } }
+15398:20947:22209,{ .@r = getequiprefinerycnt(EQI_ARMOR) + getequiprefinerycnt(EQI_GARMENT) + getequiprefinerycnt(EQI_SHOES); bonus bAgi,8; bonus bDef,30; bonus bMdef,15; bonus2 bSubRace, RC_Angel, 15; bonus2 bSubRace, RC_Demon, 15; if(.@r >= 27){ bonus bLongAtkRate, 10; bonus bDelayrate, 20; bonus bFixedCastrate, 20; } }
+15399:20947:22209,{ .@r = getequiprefinerycnt(EQI_ARMOR) + getequiprefinerycnt(EQI_GARMENT) + getequiprefinerycnt(EQI_SHOES); bonus bVit,8; bonus bDef,30; bonus bMdef,15; bonus2 bSubRace, RC_Angel, 20; bonus2 bSubRace, RC_Demon, 20; if(.@r >= 27){ bonus2 bAddClass,Class_All,4; bonus bMatkRate, 4; bonus bDelayrate, 20; bonus bFixedCastrate, 20; } }
+15400:20947:22209,{ .@r = getequiprefinerycnt(EQI_ARMOR) + getequiprefinerycnt(EQI_GARMENT) + getequiprefinerycnt(EQI_SHOES); bonus bDex,8; bonus bDef,30; bonus bMdef,15; bonus2 bSubRace, RC_Angel, 15; bonus2 bSubRace, RC_Demon, 15; if(.@r >= 27){ bonus2 bAddClass,Class_All,7; bonus bMatkRate, 7; bonus bDelayrate, 20; bonus bFixedCastrate, 20; } }
+15401:20947:22209,{ .@r = getequiprefinerycnt(EQI_ARMOR) + getequiprefinerycnt(EQI_GARMENT) + getequiprefinerycnt(EQI_SHOES); bonus bInt,8; bonus bDef,30; bonus bMdef,15; bonus2 bSubRace, RC_Angel, 15; bonus2 bSubRace, RC_Demon, 15; if(.@r >= 27){ bonus bMatkRate, 10; bonus bDelayrate, 20; bonus bFixedCastrate, 20; } }
+//300008:4406,{ .@r = getequiprefinerycnt(EQI_HAND_R); bonus2 bMagicAddRace,RC_Demon,.@r/2*3; }
+//300014:4407,{ bonus bMaxHPrate, 10; bonus2 bAddClass, All_Class, 5; }
+//300013:4407,{ bonus bMaxHPrate, 5; bonus2 bAddClass, All_Class, 10; }
