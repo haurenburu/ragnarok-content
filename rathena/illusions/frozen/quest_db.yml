@@ -1,0 +1,31 @@
+  - Id: 15110
+    Title: Ice is fire!
+  - Id: 15111
+    Title: Catch an angry ice titan
+    Targets:
+      - Mob: ILL_ICE_TITAN
+        Count: 10
+  - Id: 15112
+    Title: Dance and Dance!
+  - Id: 15113
+    Title: Dance and Dance!
+  - Id: 15114
+    Title: Catch a strange lizard
+  - Id: 15115
+    Title: Bride and Jace
+  - Id: 15116
+    Title: Clear Illusion of Frozen
+  - Id: 15117
+    Title: Catch an angry Gazeti
+    Targets:
+      - Mob: ILL_GAZETI
+        Count: 10
+  - Id: 15118
+    Title: Catch an angry snowier
+    Targets:
+      - Mob: ILL_SNOWIER
+        Count: 10
+  - Id: 15119
+    Title: Catch solid icicles
+      - Mob: ILL_SNOWIER
+        Count: 10
