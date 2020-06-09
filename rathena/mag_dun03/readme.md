@@ -10,6 +10,6 @@
 
 - add content of `mob_skill_db.txt` on `emulator\db\import\mob_skill_db.txt`
 
-- add content of `mag_dun (spawn).txt` on `emulator\npc\re\mobs\dungeons\mag_dun.txt`
+- add content of `spawn.txt` on `emulator\npc\re\mobs\dungeons\mag_dun.txt`
 
-- add content of `mag_dun (warp).txt` on `emulator\npc\warps\dungeons\mag_dun.txt`
+- add content of `warp.txt` on `emulator\npc\warps\dungeons\mag_dun.txt`
