@@ -1,4 +1,5 @@
 25297,Frozen_Stone_Fragment,Frozen Stone Fragment,3,,345,10,,,,,0xFFFFFFFF,63,2,,,,,,{},{},{}
 25298,Spirit_Jewel,Spirit Jewel,3,,294,10,,,,,0xFFFFFFFF,63,2,,,,,,{},{},{}
 25299,Snowball,Snowball,3,,278,10,,,,,0xFFFFFFFF,63,2,,,,,,{},{},{}
+25300,Ktullanux_Eye,Ktullanux Eye,3,,,0,,,,,0xFFFFFFFF,63,2,,,,,,{},{},{}
 25309,Dry_Twigs,Dry Twigs,3,,,0,,,,,0xFFFFFFFF,63,2,,,,,,{},{},{}
