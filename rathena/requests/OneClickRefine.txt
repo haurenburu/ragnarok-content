@@ -1,0 +1,43 @@
+// ======================
+// Discord: HaureN#3690
+// ======================
+
+prontera,164,168,4	script	Refinador +15	600,{
+	.@item = 501;
+	.@quan = 5;
+	.@freeRef = 8;
+	.@paidRef = 15;
+	
+	switch(select("Refino Gratis", "Refino Pago")){
+		case 1:
+			setarray .@items[0],EQI_SHOES,EQI_GARMENT,EQI_HEAD_TOP,EQI_ARMOR,EQI_HAND_L,EQI_HAND_R;
+			for(.@i = 0; .@i < getarraysize(.@items); .@i++){
+				if(getequiprefinerycnt(.@items[.@i]) < .@freeRef){
+					specialeffect2 154;
+					successrefitem .@items[.@i],.@freeRef - getequiprefinerycnt(.@items[.@i]);
+				}
+			}
+			end;
+		case 2:
+			setarray .@items[0],EQI_SHOES,EQI_GARMENT,EQI_HEAD_TOP,EQI_ARMOR,EQI_HAND_L,EQI_HAND_R;
+			
+			if (countitem(.@item) < .@quan){
+				mes "Voce nao tem os items necessarios: " + .@quan + "x "+ getitemname(.@item);
+				close;
+			}
+			for(.@i = 0; .@i < getarraysize(.@items); .@i++){
+				// prevent the item consuption
+				if(getequiprefinerycnt(.@items[.@i]) != .@paidRef) .@flag = 1;
+				
+				if(getequiprefinerycnt(.@items[.@i]) < .@paidRef){
+					specialeffect2 154;
+					successrefitem .@items[.@i],.@paidRef - getequiprefinerycnt(.@items[.@i]);
+				}
+			}
+			if (.@flag == 1) delitem 501,5;
+			end;
+	}
+
+OnInit:
+	waitingroom "Refinador Mestre",0;
+}
