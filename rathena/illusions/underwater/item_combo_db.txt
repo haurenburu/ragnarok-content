@@ -1,0 +1,9 @@
+// underwater
+//300141:300120,{ bonus2 bMagicAddEle, Ele_Water, 15; } /*boiling piranha needs 17.2*/
+300144:300150,{ bonus bCritAtkRate,15; }
+300146:4521,{ bonus bCritAtkRate,15; }
+300147:4089,{ bonus bMatkRate, 3; }
+300148:300142,{ bonus bAtk,30; }
+300148:300140,{ bonus bMatk,30; }
+300149:300141,{ bonus2 bSubEle,Ele_Neutral,5; }
+300150:4524,{ bonus bStr,4; bonus bMaxHPrate,15; }
