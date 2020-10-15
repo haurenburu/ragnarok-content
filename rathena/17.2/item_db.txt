@@ -12,3 +12,61 @@
 // weaps
 500007,Hypocrisy_Machine,Hypocrisy Machine,5,100,,3000,250,,1,3,0x00000001,63,2,2,4,150,1,2,{ bonus bUnbreakable; .@r = getrefine(); bonus bAtkRate, 3 * .@r/2; bonus bCritical, 2 * .@r/3; if (.@r >= 7) bonus bAspdRate, 20; if (.@r >= 9) { bonus2 bAddSize, Size_Small, 25; bonus2 bAddSize, Size_Large, 25; } if (.@r >= 11) skill "KN_BOWLINGBASH", getskilllv("SM_SWORD"); },{},{}
 500008,Invidia_Bundle,Invidia Bundle,5,100,,1800,210,,1,3,0x00040000,56,2,2,4,150,1,2,{ .@r = getrefine(); bonus2 bSkillAtk, "GN_CART_TORNADO", 10; if(.@r >= 11) bonus2 bSkillAtk, "GN_CART_TORNADO", 15; if(.@r >= 9) bonus bAspdRate, 10; if(.@r >= 11) bonus2 bSkillAtk, "GN_CART_TORNADO", 25; },{},{}
+// enchants commons
+// blue
+310082,Automatic_Orb_(defense),Automatic Orb (defense),6,,,0,,,,,0xFFFFFFFF,63,2,,,,,,{ .@r = getrefine(); bonus bDef, 150; if(.@r >= 9) bonus bDef, 75; if(.@r >= 11) bonus bDef, 75; },{},{}
+310083,Automatic_Orb_(magic_defense),Automatic Orb (magic defense),6,,,0,,,,,0xFFFFFFFF,63,2,,,,,,{ .@r = getrefine(); bonus bMdef, 15; if(.@r >= 9) bonus bMdef, 7; if(.@r >= 11) bonus bMdef, 7; },{},{}
+310084,Automatic_Orb_(vit),Automatic Orb (vit),6,,,0,,,,,0xFFFFFFFF,63,2,,,,,,{ bonus bVit,3; bonus bMaxHPrate,1; },{},{}
+310085,Automatic_Orb_(luk),Automatic Orb (luk),6,,,0,,,,,0xFFFFFFFF,63,2,,,,,,{ bonus bLuk,3; bonus bCritAtkRate, 1; },{},{}
+310086,Automatic_Orb_(str),Automatic Orb (str),6,,,0,,,,,0xFFFFFFFF,63,2,,,,,,{ bonus bStr,3; bonus2 bAddClass,Class_All,3; },{},{}
+310087,Automatic_Orb_(agi),Automatic Orb (agi),6,,,0,,,,,0xFFFFFFFF,63,2,,,,,,{ bonus bAgi, 3; bonus bAspdRate, 2; },{},{}
+310088,Automatic_Orb_(int),Automatic Orb (int),6,,,0,,,,,0xFFFFFFFF,63,2,,,,,,{ bonus bInt, 3; bonus bMatkRate, 2; },{},{}
+310089,Automatic_Orb_(dex),Automatic Orb (dex),6,,,0,,,,,0xFFFFFFFF,63,2,,,,,,{ bonus bDex, 3; bonus bLongAtkRate, 2; },{},{}
+// purple
+310090,Automatic_Orb_(hp_recovery),Automatic Orb (hp recovery),6,,,0,,,,,0xFFFFFFFF,63,2,,,,,,{ bonus bHPrecovRate, 30; },{},{}
+310091,Automatic_Orb_(sp_recovery),Automatic Orb (sp recovery),6,,,0,,,,,0xFFFFFFFF,63,2,,,,,,{ bonus bSPrecovRate, 30; },{},{}
+310092,Automatic_Orb_(spell),Automatic Orb (spell),6,,,0,,,,,0xFFFFFFFF,63,2,,,,,,{ bonus bMatk, 20; bonus bCastrate, -10; },{},{}
+310093,Automatic_Orb_(attack speed),Automatic Orb (attack speed),6,,,0,,,,,0xFFFFFFFF,63,2,,,,,,{ bonus bAtk, 20; bonus bAspdRate, 10; },{},{}
+310094,Automatic_Orb_(fatal),Automatic Orb (fatal),6,,,0,,,,,0xFFFFFFFF,63,2,,,,,,{ bonus bCritical, 10; bonus bCritAtkRate, 10; },{},{}
+310095,Automatic_Orb_(expert archer),Automatic Orb (expert archer),6,,,0,,,,,0xFFFFFFFF,63,2,,,,,,{ bonus bHit, 10; bonus bLongAtkRate, 10; },{},{}
+310096,Automatic_Orb_(vital),Automatic Orb (vital),6,,,0,,,,,0xFFFFFFFF,63,2,,,,,,{ .@r = getrefine(); bonus bMaxHPrate,5; bonus bMaxHP, 1500; if(.@r >= 9) bonus bMaxHPrate, 2; if(.@r >= 11) bonus bMaxHPrate, 3; },{},{}
+310097,Automatic_Orb_(mental),Automatic Orb (mental),6,,,0,,,,,0xFFFFFFFF,63,2,,,,,,{ .@r = getrefine(); bonus bMaxSPrate, 5; bonus bMaxSP, 300; if(.@r >= 9) bonus bMaxSPrate, 2; if(.@r >= 11) bonus bMaxSPrate, 3; },{},{}
+310098,Automatic_Orb_(heal),Automatic Orb (heal),6,,,0,,,,,0xFFFFFFFF,63,2,,,,,,{ .@r = getrefine(); bonus bHealPower, 5; if(.@r >= 9) bonus bHealPower, 5; if(.@r >= 11) bonus bHealPower, 7; },{},{}
+310099,Automatic_Orb_(attack_power),Automatic Orb (attack power),6,,,0,,,,,0xFFFFFFFF,63,2,,,,,,{ .@r = getrefine(); bonus2 bAddClass,Class_All,5; bonus bAtk, 75; if(.@r >= 9) bonus2 bAddClass,Class_All,2; if(.@r >= 11) bonus2 bAddClass,Class_All,3; /* rathena does not have the physical add yet*/ },{},{}
+310100,Automatic_Orb_(magic_power),Automatic Orb (magic power),6,,,0,,,,,0xFFFFFFFF,63,2,,,,,,{ .@r = getrefine(); bonus bMatkRate, 5; bonus bMatk, 75; if(.@r >= 9) bonus bMatkRate, 2; if(.@r >= 11) bonus bMatkRate, 3; },{},{}
+310101,Automatic_Orb_(shooter),Automatic Orb (shooter),6,,,0,,,,,0xFFFFFFFF,63,2,,,,,,{ .@r = getrefine(); bonus bLongAtkRate, 3; if(.@r >= 9) bonus bLongAtkRate, 3; if(.@r >= 11) bonus bLongAtkRate, 3; },{},{}
+310102,Automatic_Orb_(fast),Automatic Orb (fast),6,,,0,,,,,0xFFFFFFFF,63,2,,,,,,{ .@r = getrefine(); bonus bAspd, 1; if(.@r >= 9) bonus bAspdRate, 5; if(.@r >= 11) bonus bAspdRate, 5; },{},{}
+310103,Automatic_Orb_(caster),Automatic Orb (caster),6,,,0,,,,,0xFFFFFFFF,63,2,,,,,,{ .@r = getrefine(); bonus bCastrate, -5; if(.@r >= 9) bonus bCastrate, -5; if(.@r >= 11) bonus bCastrate, -5; },{},{}
+310104,Automatic_Orb_(critical),Automatic Orb (critical),6,,,0,,,,,0xFFFFFFFF,63,2,,,,,,{ .@r = getrefine(); bonus bCritical, 10; if(@r >= 9) bonus bCritAtkRate, 5; if(@r >= 11) bonus bCritAtkRate, 7; },{},{}
+// red
+310106,Automatic_Orb_(attacker_force),Automatic Orb (attacker force),6,,,0,,,,,0xFFFFFFFF,63,2,,,,,,{ .@r = getrefine(); bonus bAtk, 20; bonus2 bAddClass,Class_All,10; bonus2 bAddSize, size_all, 3; if(@r >= 9) bonus2 bAddSize, size_all, 1; if(@r >= 11) bonus2 bAddSize, size_all, 1; /* rathena does not have the physical add yet*/ },{},{}
+310105,Automatic_Orb_(magical_force),Automatic Orb (magical force),6,,,0,,,,,0xFFFFFFFF,63,2,,,,,,{ .@r = getrefine(); bonus bCastrate, -10; bonus bMatk, 20; if(@r >= 9) bonus2 bMagicAddEle,Ele_All, 1; if(@r >= 11) bonus2 bMagicAddEle,Ele_All,2; },{},{}
+310107,Automatic_Orb_(range_force),Automatic Orb (range force),6,,,0,,,,,0xFFFFFFFF,63,2,,,,,,{ .@r = getrefine(); bonus bAtk, 20; bonus bLongAtkRate, 10; bonus2 bAddSize, size_all,3; if(.@r >= 9) bonus2 bAddSize, size_all,1; if(.@r >= 11) bonus2 bAddSize, size_all,1; },{},{}
+310108,Automatic_Orb_(critical_force),Automatic Orb (critical force),6,,,0,,,,,0xFFFFFFFF,63,2,,,,,,{ .@r = getrefine(); bonus bCritical,5; bonus bCritAtkRate, 10; bonus2 bAddSize, size_all,3; if(.@r >= 9) bonus2 bAddSize, size_all,1; if(.@r >= 11) bonus2 bAddSize, size_all,1; },{},{}
+310109,Automatic_Orb_(recovery_force),Automatic Orb (recovery force),6,,,0,,,,,0xFFFFFFFF,63,2,,,,,,{ .@r = getrefine(); bonus bMatk, 20; bonus bHealPower, 5; if(.@r >= 9) bonus bHealPower, 5; if(.@r >= 11) bonus bHealPower, 5; },{},{}
+310110,Automatic_Orb_(delay_after_skill),Automatic Orb (delay after-skill),6,,,0,,,,,0xFFFFFFFF,63,2,,,,,,{ .@r = getrefine(); bonus bDelayrate, -4; if(.@r >= 9) bonus bDelayrate, -6; if(.@r >= 11) bonus bDelayrate, -6; },{},{}
+310111,Automatic_Orb_(fixed_casting),Automatic Orb (fixed casting),6,,,0,,,,,0xFFFFFFFF,63,2,,,,,,{ .@r = getrefine(); bonus bFixedCast, 100; if(.@r >= 9) bonus bFixedCast, 200; if(.@r >= 11) bonus bFixedCast, 500; },{},{}
+310112,Automatic_Orb_(above_all),Automatic Orb (above all),6,,,0,,,,,0xFFFFFFFF,63,2,,,,,,{ .@r = getrefine(); bonus2 bsubclass, Class_Boss, 7; bonus2 bsubclass, Class_Normal, 7; if(.@r >= 9) bonus2 bSubSize,Size_All,7; if(.@r >= 11) bonus2 bSubRace,RC_All,7; },{},{}
+310113,Automatic_Orb_(drain_life),Automatic Orb (drain life),6,,,0,,,,,0xFFFFFFFF,63,2,,,,,,{ bonus2 bHPDrainRate,20,3; },{},{}
+310114,Automatic_Orb_(drain_soul),Automatic Orb (drain soul),6,,,0,,,,,0xFFFFFFFF,63,2,,,,,,{ bonus2 bSPDrainRate,10,2; },{},{}
+310115,Automatic_Orb_(magic_healing),Automatic Orb (magic healing),6,,,0,,,,,0xFFFFFFFF,63,2,,,,,,{ autobonus "{ bonus2 bHPRegenRate,500,400; }",20,10000,BF_MAGIC; },{},{}
+310116,Automatic_Orb_(magic_soul),Automatic Orb (magic soul),6,,,0,,,,,0xFFFFFFFF,63,2,,,,,,{ autobonus "{ bonus2 bSPRegenRate,120,400; }",10,10000,BF_MAGIC; },{},{}
+310117,Automatic_Orb_(power force),Automatic Orb (power force),6,,,0,,,,,0xFFFFFFFF,63,2,,,,,,{ .@r = getrefine(); bonus bMatkRate, 3; bonus2 bAddClass,Class_All,3; if(.@r >= 9) { bonus bMatkRate, 3; bonus2 bAddClass,Class_All,3; } if(.@r >= 11) { bonus bMatkRate, 4; bonus2 bAddClass,Class_All,4; } },{},{}
+310118,Automatic_Orb_(robust),Automatic Orb (robust),6,,,0,,,,,0xFFFFFFFF,63,2,,,,,,{ .@r = getrefine(); bonus bMaxHP, 2000; bonus bMaxSP, 300; bonus bMaxHPrate,5; bonus bMaxSPrate,5; if(.@r >= 9){ bonus bMaxHPrate,2; bonus bMaxSPrate,2; } if(.@r >= 11){ bonus bMaxHPrate,3; bonus bMaxSPrate,3; } },{},{}
+310119,Automatic_Orb_(powerful),Automatic Orb (powerful),6,,,0,,,,,0xFFFFFFFF,63,2,,,,,,{ .@r = getrefine(); bonus2 bAddClass,Class_All,5; bonus bLongAtkRate, 5; bonus2 bMagicAddEle,Ele_All,5; if(.@r >= 9){ bonus2 bAddClass,Class_All,2; bonus bLongAtkRate, 2; bonus2 bMagicAddEle,Ele_All,2; } if(.@r >= 11){ bonus2 bAddClass,Class_All,3; bonus bLongAtkRate, 3; bonus2 bMagicAddEle,Ele_All,3; } /* rathena does not have the physical add yet*/ },{},{}
+310120,Automatic_Orb_(all_force),Automatic Orb (all force),6,,,0,,,,,0xFFFFFFFF,63,2,,,,,,{ .@r = getrefine(); bonus2 bAddClass,Class_All,5; bonus bLongAtkRate, 5; bonus2 bMagicAddEle,Ele_All,5; /* rathena does not have the physical add yet*/ },{},{}
+// yellow // todo scripts
+310121,Automatic_Orb_(Unlimited_Vital),Automatic Orb (Unlimited Vital),6,,,0,,,,,0xFFFFFFFF,63,2,,,,,,{},{},{}
+310122,Automatic_Orb_(Spell_Buster),Automatic Orb (Spell Buster),6,,,0,,,,,0xFFFFFFFF,63,2,,,,,,{},{},{}
+310123,Automatic_Orb_(Firing_Shot),Automatic Orb (Firing Shot),6,,,0,,,,,0xFFFFFFFF,63,2,,,,,,{},{},{}
+310124,Automatic_Orb_(Overpower),Automatic Orb (Overpower),6,,,0,,,,,0xFFFFFFFF,63,2,,,,,,{},{},{}
+310125,Automatic_Orb_(Fatal_Flash),Automatic Orb (Fatal Flash),6,,,0,,,,,0xFFFFFFFF,63,2,,,,,,{},{},{}
+310126,Automatic_Orb_(Lucky_Strike),Automatic Orb (Lucky Strike),6,,,0,,,,,0xFFFFFFFF,63,2,,,,,,{},{},{}
+// black (skills)
+310127,Automatic_Orb(Dragonic_Breath),Automatic Orb (Dragonic Breath),6,0,,,,,,,0xFFFFFFFF,63,2,,,,,,{ .@r = getrefine(); bonus2 bSkillAtk, "RK_DRAGONBREATH",15; bonus2 bSkillAtk, "RK_DRAGONBREATH_WATER",15; if (.@r > 9) { bonus2 bSkillAtk, "RK_DRAGONBREATH",3; bonus2 bSkillAtk, "RK_DRAGONBREATH_WATER",3; } if (.@r > 11){ bonus2 bSkillAtk, "RK_DRAGONBREATH",7; bonus2 bSkillAtk, "RK_DRAGONBREATH_WATER",7; } },{},{}
+310128,Automatic_Orb(Wave_Break),Automatic Orb (Wave Break),6,0,,,,,,,0xFFFFFFFF,63,2,,,,,,{ .@r = getrefine(); bonus2 bSkillAtk, "RK_IGNITIONBREAK",15; bonus2 bSkillAtk, "RK_SONICWAVE",15; if (.@r > 9){ bonus2 bSkillAtk, "RK_IGNITIONBREAK",3; bonus2 bSkillAtk, "RK_SONICWAVE",3; } if (.@r > 11){ bonus2 bSkillAtk, "RK_IGNITIONBREAK",7; bonus2 bSkillAtk, "RK_SONICWAVE",7; bonus2 bSkillCooldown, "RK_SONICWAVE",-250; } },{},{}
+310129,Automatic_Orb(Hundred_Spiral),Automatic Orb (Hundred Spiral),6,0,,,,,,,0xFFFFFFFF,63,2,,,,,,{ .@r = getrefine(); bonus2 bSkillAtk, "RK_HUNDREDSPEAR",15; bonus2 bSkillAtk, "LK_SPIRALPIERCE",15; if (.@r > 9){ bonus2 bSkillAtk, "RK_HUNDREDSPEAR",3; bonus2 bSkillAtk, "LK_SPIRALPIERCE",3; } if (.@r > 11){ bonus2 bSkillAtk, "RK_HUNDREDSPEAR",7; bonus2 bSkillAtk, "LK_SPIRALPIERCE",7; bonus2 bSkillCooldown, "RK_HUNDREDSPEAR",-250; } },{},{}
+310130,Automatic_Orb(Drive_Press),Automatic Orb (Drive Press),6,0,,,,,,,0xFFFFFFFF,63,2,,,,,,{ .@r = getrefine(); bonus2 bSkillAtk, "LG_SHIELDPRESS",15; bonus2 bSkillAtk, "LG_EARTHDRIVE",15; if (.@r > 9) { bonus2 bSkillAtk, "LG_SHIELDPRESS",3; bonus2 bSkillAtk, "LG_EARTHDRIVE",3; } if (.@r > 11){ bonus2 bSkillAtk, "LG_SHIELDPRESS",7; bonus2 bSkillAtk, "LG_EARTHDRIVE",7; } },{},{}
+310131,Automatic_Orb(Vanishing_Cannon),Automatic Orb (Vanishing Cannon),6,0,,,,,,,0xFFFFFFFF,63,2,,,,,,{ .@r = getrefine(); bonus2 bSkillAtk, "LG_BANISHINGPOINT",15; bonus2 bSkillAtk, "LG_CANNONSPEAR",15; if (.@r > 9) { bonus2 bSkillAtk, "LG_BANISHINGPOINT",3; bonus2 bSkillAtk, "LG_CANNONSPEAR",3; } if (.@r > 11){ bonus2 bSkillAtk, "LG_BANISHINGPOINT",7; bonus2 bSkillAtk, "LG_CANNONSPEAR",7; } },{},{}
+310132,Automatic_Orb(Genesis_Pressure),Automatic Orb (Genesis Pressure),6,0,,,,,,,0xFFFFFFFF,63,2,,,,,,{ .@r = getrefine(); bonus2 bSkillAtk, "PA_PRESSURE",15; bonus2 bSkillAtk, "LG_RAYOFGENESIS",15; if (.@r > 9) { bonus2 bSkillAtk, "PA_PRESSURE",3; bonus2 bSkillAtk, "LG_RAYOFGENESIS",3; } if (.@r > 11){ bonus2 bSkillAtk, "PA_PRESSURE",7; bonus2 bSkillAtk, "LG_RAYOFGENESIS",7; } },{},{}
+//
